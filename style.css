@@ -1,0 +1,181 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #000000;
+}
+.container{
+  display: flex;
+}
+
+/* main section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main-containers{
+  display: flex;
+  margin-top: 20px;
+}
+.main-containers .card{
+  width: 25%;
+  margin: 10px;
+  height: 200px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-containers .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+}
+.main-containers .card p{
+  font-size: 12px;
+}
+.main-containers .card button{
+  background: orangered;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-containers .card button:hover{
+  background: rgba(223, 70, 15, 0.856);
+}
+.main-containers .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* module */
+.main-admin-module {
+  display: none;
+}
+
+.module-box {
+  width: 100%;
+  height: 520px;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+/*upload sections */
+.upload-container {
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 20px; 
+}
+
+.upload-header-container,
+.upload-about-container,
+.upload-learn-more-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #000000;
+  border-radius: 8px;
+  width: 50%; 
+  height: 150px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+  margin-right: 10px; 
+}
+
+.upload-header-container:hover,
+.upload-about-container:hover,
+.upload-learn-more-container:hover {
+  border-color: #ff0000;
+}
+
+.upload-header-container img,
+.upload-about-container img,
+.upload-learn-more-container img {
+  display: block;     
+  margin: 0 auto;    
+  width: 80px;       
+}
+
+.upload-header-container p,
+.upload-about-container p,
+.upload-learn-more-container p {
+  margin: 0;
+  text-align: center; 
+  color: #666666;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+ /*contact edit section */
+ .contact-info-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact-item label {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.contact-item input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.contact-item button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+  margin-top: 27px;
+}
+
+.contact-item button:hover {
+  background-color: #0056b3;
+}
+
